@@ -2,7 +2,7 @@
 
 This is only a simple project made with angular material and using restful APIs and http client for accessing the APIs. MetaWeather Api has disabled CORS by default so if you want to run it locally you must install Access-Control-Allow-Origin extension from the chrome web store and turn it on. Just a simple webapp to get familiarised with the angular framework and observables and well as other framework specific properties of angular. This app satisfies:
 
-1.A search bar to search for places.
+1. A search bar to search for places.
 
 2. List the search results. 
 
