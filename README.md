@@ -1,6 +1,11 @@
-# AngW
+# Angular MetaWeather App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+This is only a simple project made with angular material and using restful APIs and http client for accessing the APIs. MetaWeather Api has disabled CORS by default so if you want to run it locally you must install Access-Control-Allow-Origin extension from the chrome web store and turn it on. Just a simple webapp to get familiarised with the angular framework and observables and well as other framework specific properties of angular. This app satisfies:
+1.A search bar to search for places.
+2. List the search results. 
+3. On click of the list item, show the details of the weather of that place in another new page. 
+4. The detail page should show current days weather and the next 5 days weather. 
+5. Show an icon based on the current days weather
 
 ## Development server
 
