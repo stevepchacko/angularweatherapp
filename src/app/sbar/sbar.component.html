@@ -1,0 +1,18 @@
+
+<p class="center">Please enter the location name into the search bar below:</p>
+<div class="center">
+
+<label for="search-box">Location:</label>
+  
+    <input #searchBox id="search-box" /><button (click)= "sClick(searchBox.value)">Search</button>
+</div>
+<div class="center1">
+<mat-list *ngIf = "term">Results:</mat-list>    
+    <mat-list-item *ngFor = "let location of locations$ | async">
+        <a routerLink="/weather/{{location.woeid}}">
+            {{location.title}}
+        </a>
+    </mat-list-item>
+
+
+</div>

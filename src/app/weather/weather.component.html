@@ -1,0 +1,25 @@
+<h2 class="center1" >Weather Forecast for {{root.title}}</h2>
+
+    <div *ngIf= "cWeather"> 
+        
+        <mat-card *ngFor= "let con of cWeather; let i= index" class="center1">
+                <mat-card-header>
+                  <mat-card-title class="center1">Forecast for {{con.applicable_date}}</mat-card-title>
+                </mat-card-header>
+                <div *ngIf= "i === 0">
+                <img mat-card-image src="https://www.metaweather.com/static/img/weather/{{con.weather_state_abbr}}.svg" alt="Weather Forecast" >
+                </div>
+                <mat-card-content>
+                  <p>
+                    {{con.weather_state_name }}  <br>
+                    Current temperature: {{ con.the_temp | number:'2.0-2' }}C<br>
+                    Minimum temperature: {{ con.min_temp | number:'2.0-2' }}C<br>
+                    Maximum temperature: {{ con.max_temp | number:'2.0-2' }}C<br>
+                    Humidity: {{ con.humidity | number:'2.0-2' }}<br>
+                    Accuracy: {{ con.predictability}}<br>
+
+                  </p>
+                </mat-card-content>
+              </mat-card>
+          
+    </div>
